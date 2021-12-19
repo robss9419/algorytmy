@@ -97,3 +97,35 @@ public class HashTable {
         }
     }
 }
+
+ class LastName {
+    private int popularity;
+    private String lastname;
+
+    public LastName (int popularity, String lastname) {
+        this.popularity = popularity;
+        this.lastname = lastname;
+    }
+
+    public int getPopularity() {
+        return popularity;
+    }
+
+    public void setPopularity(int popularity) {
+        this.popularity = popularity;
+    }
+
+    public String getLastname() {
+        return lastname;
+    }
+
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
+    }
+
+    public static LastName create(Integer popularity, String lastname) {
+        return new LastName(popularity, lastname);
+    }
+
+}
+
